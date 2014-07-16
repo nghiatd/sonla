@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Pdf/Cmap
+END
+SegmentToDelta.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Pdf/Cmap/SegmentToDelta.php
+END
+ByteEncoding.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Pdf/Cmap/ByteEncoding.php
+END
+TrimmedTable.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Pdf/Cmap/TrimmedTable.php
+END

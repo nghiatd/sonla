@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/son-la-portal/!svn/ver/42/trunk/application/modules/admin/models/Tourer
+END
+Entity.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/son-la-portal/!svn/ver/35/trunk/application/modules/admin/models/Tourer/Entity.php
+END
+DataMapper.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/son-la-portal/!svn/ver/42/trunk/application/modules/admin/models/Tourer/DataMapper.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/son-la-portal/!svn/ver/35/trunk/application/modules/admin/models/Tourer/Exception.php
+END
+Repository.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/son-la-portal/!svn/ver/35/trunk/application/modules/admin/models/Tourer/Repository.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/son-la-portal/!svn/ver/35/trunk/application/modules/admin/models/Tourer/Interface.php
+END
+Mapper.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/son-la-portal/!svn/ver/35/trunk/application/modules/admin/models/Tourer/Mapper.php
+END

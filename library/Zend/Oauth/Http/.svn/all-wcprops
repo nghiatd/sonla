@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Oauth/Http
+END
+RequestToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Oauth/Http/RequestToken.php
+END
+Utility.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Oauth/Http/Utility.php
+END
+UserAuthorization.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Oauth/Http/UserAuthorization.php
+END
+AccessToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Oauth/Http/AccessToken.php
+END

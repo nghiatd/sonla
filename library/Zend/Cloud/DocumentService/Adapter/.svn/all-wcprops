@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Cloud/DocumentService/Adapter
+END
+WindowsAzure.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Cloud/DocumentService/Adapter/WindowsAzure.php
+END
+AbstractAdapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Cloud/DocumentService/Adapter/AbstractAdapter.php
+END
+SimpleDb.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Cloud/DocumentService/Adapter/SimpleDb.php
+END

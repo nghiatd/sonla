@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zf/Model
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zf/Model/Message.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zf/Model/Interface.php
+END
+DataMapper.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zf/Model/DataMapper.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zf/Model/Exception.php
+END
+RepositoryInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zf/Model/RepositoryInterface.php
+END
+Entity.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zf/Model/Entity.php
+END

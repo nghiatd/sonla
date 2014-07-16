@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics
+END
+DirectoryConfigurationSubscription.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/DirectoryConfigurationSubscription.php
+END
+ConfigurationWindowsEventLog.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/ConfigurationWindowsEventLog.php
+END
+ConfigurationDataSources.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/ConfigurationDataSources.php
+END
+ConfigurationObjectBaseAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/ConfigurationObjectBaseAbstract.php
+END
+PerformanceCounterSubscription.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/PerformanceCounterSubscription.php
+END
+ConfigurationInstance.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/ConfigurationInstance.php
+END
+Manager.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/Manager.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/Exception.php
+END
+ConfigurationDiagnosticInfrastructureLogs.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/ConfigurationDiagnosticInfrastructureLogs.php
+END
+LogLevel.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/LogLevel.php
+END
+ConfigurationPerformanceCounters.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/ConfigurationPerformanceCounters.php
+END
+ConfigurationDirectories.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/ConfigurationDirectories.php
+END
+ConfigurationLogs.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/Diagnostics/ConfigurationLogs.php
+END

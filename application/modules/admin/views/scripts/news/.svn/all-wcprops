@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/son-la-portal/!svn/ver/3/trunk/application/modules/admin/views/scripts/news
+END
+edit.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/views/scripts/news/edit.phtml
+END
+add.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/views/scripts/news/add.phtml
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/views/scripts/news/index.phtml
+END

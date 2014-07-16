@@ -1,0 +1,247 @@
+<?php
+
+class Admin_Model_Faq_DataMapper implements Zf_Model_Interface, Admin_Model_Faq_Interface
+{
+    /**
+     * @var Login_Model_DbTable_LoginAttempt
+     */
+    protected $_dbTable;
+
+    /**
+     * @param object $dbTable
+     * @return object
+     */
+    public function setDbTable($dbTable)
+    {
+        if (is_string($dbTable)) {
+
+            $dbTable = new $dbTable();
+        }
+
+        if (!$dbTable instanceof Zend_Db_Table_Abstract) {
+
+            throw new Admin_Model_Faq_Exception('Invalid table data gateway provided');
+        }
+
+        $this->_dbTable = $dbTable;
+
+        return $this;
+    }
+
+    /**
+     * @return Zend_Db_Table_Abstract
+     */
+    public function getDbTable()
+    {
+        if (null === $this->_dbTable) {
+
+            $this->setDbTable('Admin_Model_DbTable_Faq');
+        }
+        return $this->_dbTable;
+    }
+
+    /**
+     * @param string $the_sz_Order
+     * @param array $the_a_Where
+     * @return object
+     */
+    public function o_fGetSelect($the_sz_Order = null, $the_a_Where = null)
+    {
+        try
+        {
+            $o_Select = $this->getDbTable()
+                                ->select()
+                                ->setIntegrityCheck(FALSE)
+                                ->from(array('F'=>'tbl_faq'),array('FAQ_Id','FAQ_Title', 'FAQ_CategoryId','FAQ_Name', 'FAQ_Address', 'FAQ_Email', 'FAQ_Status', 'FAQ_CreatedDate','Faq_LastActivity', 'FAQ_Answer'))
+                                ->join(array('CAT'=>'tbl_faq_categories'),
+                                        'F.FAQ_CategoryId = CAT.FAQ_CAT_Id',array('FAQ_CAT_Name_en'=>'FAQ_CAT_Name_en','FAQ_CAT_Name_vi'=>'FAQ_CAT_Name_vi', 'FAQ_CAT_Code' =>'FAQ_CAT_Code'));
+
+            if (!is_null($the_a_Where))
+            {
+                foreach ($the_a_Where as $sz_Field => $sz_Value)
+                {
+                    if ($sz_Field == 'Faq_CategoryId' ||  $sz_Field == 'Faq_Status')
+                    {
+                        if ($sz_Field == 'Faq_Status' && $sz_Value == Zf_Util_Const::STATUS_All)
+                        {
+                            $o_Select->where($sz_Field . ' < ?', (int) $sz_Value);
+
+                        } else {
+
+                            $o_Select->where($sz_Field . ' = ?', (int) $sz_Value);
+                        }
+
+                    } else {
+
+                        $o_Select->where($sz_Field . ' LIKE ?', '%' . (string) $sz_Value . '%');
+                    }
+                }
+            }
+
+            if (!is_null($the_sz_Order)) {
+
+                $o_Select->order($the_sz_Order);
+            }
+            return $o_Select;
+
+        } catch (Exception $ex) {
+
+            throw new Admin_Model_Faq_Exception($ex);
+        }
+
+        return null;
+    }
+
+    /**
+     * Save data
+     * @author Nhungnt
+     * @since 26/04/2014
+     * @param array $the_a_Data
+     */
+    public function v_fSave($the_a_Data)
+    {
+    	
+        try
+        {
+            if ( is_null( $this->a_fGetById($the_a_Data['FAQ_Id']) ) )
+            {
+                $this->getDbTable()->insert($the_a_Data);
+
+            } else {
+                $i_Id = $the_a_Data['FAQ_Id'];
+
+                unset($the_a_Data['FAQ_Id']);
+
+               $this->getDbTable()->update($the_a_Data, array('FAQ_Id = ?' => (int) $i_Id));
+            }
+
+        } catch(Exception $ex) {
+
+            throw new Admin_Model_Faq_Exception($ex);
+        }
+
+        return null;
+    }
+
+    /**
+     * Get Faq by id
+     * @author Nhungnt
+     * @since 26/04/2014
+     * @param int $the_i_Id
+     * @return array
+     */
+    public function a_fGetById($the_i_Id)
+    {
+        try
+        {
+            $o_Result = $this->getDbTable()->find($the_i_Id);
+
+            if (0 == count($o_Result)) {
+
+                return null;
+            }
+
+            $a_Row = $o_Result->current()->toArray();
+
+            return $a_Row;
+
+        } catch(Exception $ex) {
+
+            throw new Admin_Model_Faq_Exception($ex);
+        }
+
+        return null;
+    }
+
+    /**
+     * Get Faq info
+     * @author nhungnt
+     * @since 26/04/2014
+     * @param string $the_sz_Key
+     * @param string $the_sz_Value
+     * @return array
+     */
+    public function a_fGetFaqInfo($the_sz_Key, $the_sz_Value)
+    {
+        try
+        {
+            $o_Select = $this->getDbTable()->select()->where($the_sz_Key . ' = ?', (string) $the_sz_Value);
+
+            $o_Result = $this->getDbTable()->fetchRow($o_Select);
+
+            if (0 == count($o_Result)) {
+
+                return null;
+            }
+
+            $a_Row = $o_Result->toArray();
+
+            return $a_Row;
+
+        } catch(Exception $ex) {
+
+            throw new Admin_Model_Faq_Exception($ex);
+
+        }
+        return null;
+    }
+
+    /**
+     * Delete data
+     * @author nhungnt
+     * @since 26/04/2014
+     * @param array $the_a_Data
+     */
+    public function b_fDelete($the_a_Data)
+    {
+        try
+        {
+            $this->getDbTable()->delete(array('FAQ_Id = ?' => (int) $the_a_Data['FAQ_Id']));
+
+        } catch(Exception $ex) {
+
+            throw new Admin_Model_Faq_Exception($ex);
+        }
+
+        return null;
+    }
+
+	/**
+	 * Get faq category list with id and name
+	 * @author nhungnt
+	 * @since 27/04/2014
+	 * @param int $the_i_Status
+	 * @return array
+	 */
+	public function a_fGetCatList($the_i_Status = null)
+	{
+		if ( !is_null($the_i_Status) )
+		{
+			try {
+
+				$o_Select = $this->getDbTable()->select()
+							 ->setIntegrityCheck(FALSE)
+                             ->from(array('CAT'=>'tbl_faq_categories'),
+                                        array('FAQ_CAT_Id','FAQ_CAT_Name_en','FAQ_CAT_Name_vi', 'FAQ_CAT_Code' ));
+
+				if($the_i_Status != Zf_Util_Const::STATUS_All)
+				{
+					$o_Select->where('FAQ_CAT_Status = ?', (int) $the_i_Status);
+				}
+
+				$o_ResultSet = $this->getDbTable()->fetchAll($o_Select);
+
+				return $o_ResultSet->toArray();
+
+			} catch(Exception $ex) {
+
+				throw new Admin_Model_Faq_Exception($ex);
+
+			}
+		}
+		else
+		{
+			return null;
+		}
+	}
+}

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/son-la-portal/!svn/ver/68/trunk/application/modules/admin/controllers
+END
+CategoriesController.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/son-la-portal/!svn/ver/35/trunk/application/modules/admin/controllers/CategoriesController.php
+END
+CitizenController.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/son-la-portal/!svn/ver/40/trunk/application/modules/admin/controllers/CitizenController.php
+END
+IndexController.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/controllers/IndexController.php
+END
+LoginAttemptController.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/son-la-portal/!svn/ver/19/trunk/application/modules/admin/controllers/LoginAttemptController.php
+END
+OrgController.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/son-la-portal/!svn/ver/19/trunk/application/modules/admin/controllers/OrgController.php
+END
+FaqController.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/son-la-portal/!svn/ver/66/trunk/application/modules/admin/controllers/FaqController.php
+END
+LoginController.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/son-la-portal/!svn/ver/20/trunk/application/modules/admin/controllers/LoginController.php
+END
+LogoutController.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/controllers/LogoutController.php
+END
+ContentController.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/son-la-portal/!svn/ver/62/trunk/application/modules/admin/controllers/ContentController.php
+END
+IntroController.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/son-la-portal/!svn/ver/58/trunk/application/modules/admin/controllers/IntroController.php
+END
+BusinessController.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/son-la-portal/!svn/ver/68/trunk/application/modules/admin/controllers/BusinessController.php
+END
+NewsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/19/trunk/application/modules/admin/controllers/NewsController.php
+END
+UserController.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/44/trunk/application/modules/admin/controllers/UserController.php
+END
+TourerController.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/son-la-portal/!svn/ver/35/trunk/application/modules/admin/controllers/TourerController.php
+END

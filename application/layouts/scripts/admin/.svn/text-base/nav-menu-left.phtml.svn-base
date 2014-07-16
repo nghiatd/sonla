@@ -1,0 +1,103 @@
+<!-- sidebar -->
+<div class="col-xs-6 hidden-sm hidden-md hidden-lg sidebar-offcanvas" id="sidebar" role="navigation">
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="<?php echo APPLICATION_URL ?>admin/">
+						<span class="glyphicon glyphicon-dashboard"></span>
+						<?php echo $this->translate('ADMIN_NAV_MENU_Dashboard'); ?>
+					</a>
+				</h4>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+						<span class="glyphicon glyphicon-list-alt"></span>
+						<?php echo $this->translate('ADMIN_NAV_MENU_Categories'); ?>
+						<b class="caret"></b>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse <?php if ($this->selectedMenu == 'categories'): ?>in<?php else:?>collapse<?php endif;?>">
+				<div class="panel-body">
+					<p><a href="<?php echo APPLICATION_URL ?>admin/categories/intro/"><?php echo $this->translate('ADMIN_NAV_MENU_CatIntro'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/categories/news/"><?php echo $this->translate('ADMIN_NAV_MENU_CatNews'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/categories/org/"><?php echo $this->translate('ADMIN_NAV_MENU_CatOrg'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/categories/business/"><?php echo $this->translate('ADMIN_NAV_MENU_CatBusiness'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/categories/citizen/"><?php echo $this->translate('ADMIN_NAV_MENU_CatCitizen'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/categories/add/"><?php echo $this->translate('ADMIN_NAV_MENU_AddCat'); ?></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+						<span class="glyphicon glyphicon-briefcase"></span>
+						<?php echo $this->translate('ADMIN_NAV_MENU_Contents'); ?>
+						<b class="caret"></b>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse <?php if ($this->selectedMenu == 'contents'): ?>in<?php else:?>collapse<?php endif;?>">
+				<div class="panel-body">
+					<p><a href="<?php echo APPLICATION_URL ?>admin/content/intro/"><?php echo $this->translate('ADMIN_NAV_MENU_Intro'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/content/news/"><?php echo $this->translate('ADMIN_NAV_MENU_News'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/content/org/"><?php echo $this->translate('ADMIN_NAV_MENU_Org'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/content/business/"><?php echo $this->translate('ADMIN_NAV_MENU_Business'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/content/citizen/"><?php echo $this->translate('ADMIN_NAV_MENU_Citizen'); ?></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+						<span class="glyphicon glyphicon-user"></span>
+						<?php echo $this->translate('ADMIN_NAV_MENU_Users'); ?>
+						<b class="caret"></b>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse <?php if ($this->selectedMenu == 'users'): ?>in<?php else:?>collapse<?php endif;?>">
+				<div class="panel-body">
+					<p><a href="<?php echo APPLICATION_URL ?>admin/user/personaldetail"><?php echo $this->translate('ADMIN_NAV_MENU_PersonalDetail'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/user/"><?php echo $this->translate('ADMIN_NAV_MENU_ViewAll'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/loginattempt/"><?php echo $this->translate('ADMIN_NAV_MENU_LoginAttempt'); ?></a></p>
+					<p><a href="<?php echo APPLICATION_URL ?>admin/user/add"><?php echo $this->translate('ADMIN_NAV_MENU_AddNew'); ?></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+						<span class="glyphicon glyphicon-cog"></span>
+						<?php echo $this->translate('ADMIN_NAV_ACC_Settings'); ?>
+						<b class="caret"></b>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFive" class="panel-collapse collapse">
+				<div class="panel-body">
+					<p><a href="<?php echo APPLICATION_URL ?>admin/user/personaldetail"><span class="glyphicon glyphicon-file"></span> <?php echo $this->translate('ADMIN_NAV_ACC_PersonalDetails'); ?></a></p>
+					<p><a href="#"><span class="glyphicon glyphicon-briefcase"></span> <?php echo $this->translate('ADMIN_NAV_ACC_ProjectDetails'); ?></a></p>
+					<p><a href="#"><span class="glyphicon glyphicon-envelope"></span> <?php echo $this->translate('ADMIN_NAV_ACC_Inbox'); ?></a></p>
+					<p><a href="#"><span class="glyphicon glyphicon-stats"></span> <?php echo $this->translate('ADMIN_NAV_ACC_Statistics'); ?></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="<?php echo APPLICATION_URL ?>admin/logout">
+						<span class="glyphicon glyphicon-log-out"></span> <?php echo $this->translate('ADMIN_TITLE_PAGES_Logout'); ?>
+					</a>
+				</h4>
+			</div>
+		</div>
+	</div>
+</div>

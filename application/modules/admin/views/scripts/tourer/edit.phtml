@@ -1,0 +1,13 @@
+<!--  start page-heading -->
+<div class="page-header">
+	<h3><?php echo $this->title; ?></h3>
+</div>
+<ol class="breadcrumb">
+  <li><a href="<?php echo APPLICATION_URL ?>admin/">Admin</a></li>
+  <li><a href="<?php echo APPLICATION_URL ?>admin/tourer/"><?php echo $this->translate('ADMIN_NAV_MENU_Tourer'); ?></a></li>
+  <li class="active"><?php echo $this->title; ?></li>
+</ol>
+<!-- end page-heading -->
+<div class="content-table col-xs-12">
+	<?php echo $this->o_CatForm ?>
+</div>

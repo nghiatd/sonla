@@ -1,0 +1,48 @@
+<?php
+$this->layout()->setLayout('admin/login');
+$this->title = $this->translate('ADMIN_TITLE_PAGES_Login');
+$this->headTitle($this->title);
+?>
+<!--  start loginbox ................................................................................. -->
+<div id="loginbox">
+	<input id="user-pass-required" name="user-pass-required" type="hidden" value="<?php echo $this->translate('ADMIN_USER_MSG_UserPassRequired') ?>" />
+	<input id="user-required" name="user-required" type="hidden" value="<?php echo $this->translate('ADMIN_USER_MSG_UserRequired') ?>" />
+	<input id="pass-required" name="pass-required" type="hidden" value="<?php echo $this->translate('ADMIN_USER_MSG_PassRequired') ?>" />
+	<input id="challenge-text" name="challenge-text" type="hidden" value="<?php echo $this->challenge ?>" />
+	<div id="login-error">
+		<?php
+		if ($this->errorMessage != null) {
+					echo "<div id='error-message' class='alert alert-danger'>" . $this->errorMessage . "</div>";
+				} elseif ($this->successMessage != null) {
+					echo "<div id='success-message' class='alert alert-success'>" . $this->successMessage . "</div>";
+				}
+				?>
+	</div>
+
+	<!--  start login-inner -->
+	<div id="login-inner">
+
+		<?php echo $this->objFormLogin ?>
+
+	</div>
+	<!--  end login-inner -->
+	<div class="clearfix"></div>
+	<a id="forgot-pwd" href="" class="btn btn-link"><?php echo $this->translate('ADMIN_USER_LINK_ForgotPassword'); ?> </a>
+</div>
+<!--  end loginbox -->
+
+<!--  start forgotbox ................................................................................... -->
+<div id="forgotbox">
+	<div class="forgotbox-text">
+		<?php echo $this->translate('ADMIN_USER_MSG_SendEmailResetPass'); ?>
+	</div>
+	<!--  start forgot-inner -->
+	<div class="forgot-inner">
+		<input type="text" value="" class="form-control" placeholder="<?php echo $this->translate('ADMIN_USER_TITLE_EmailAddr'); ?>" /> <input type="button" class="btn btn-lg btn-primary btn-block" value="<?php echo $this->translate('ADMIN_USER_FORM_LABELS_Send'); ?>" />
+	</div>
+	<!--  end forgot-inner -->
+	<div class="clearfix"></div>
+	<a href="" id="back-login" class="btn btn-link">&laquo; <?php echo $this->translate('ADMIN_USER_LINK_BackToLogin'); ?>
+	</a>
+</div>
+<!--  end forgotbox -->

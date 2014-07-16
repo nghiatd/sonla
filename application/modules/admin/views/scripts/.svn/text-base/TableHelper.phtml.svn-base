@@ -1,0 +1,201 @@
+<!--  start page-heading -->
+<div class="page-header col-xs-12">
+	<h3><?php echo $this->title; ?></h3>
+</div>
+<div class="col-xs-12">
+	<ol class="breadcrumb">
+            <?php $a_Info = $this->info; ?>
+	  <li><a href="<?php echo APPLICATION_URL . $a_Info['module']['name'] ?>/"><?php echo $a_Info['module']['trans'] ?></a></li>
+          <!--
+            @author Cuonglv
+            @since 22/04/2014
+            Check action view Breadcrumb
+          -->
+	  <?php if(isset($a_Info['action']) && $a_Info['action']['name']!= 'index'): ?>
+	  	<li><a href="<?php echo APPLICATION_URL . $a_Info['module']['name'] . '/' . $a_Info['controller']['name'] ?>/"><?php echo $a_Info['controller']['trans'] ?></a></li>
+	  	<li class="active"><?php echo $a_Info['action']['trans'] ?></li>
+	  <?php else:?>
+	  	<li class="active"><?php echo $a_Info['controller']['trans'] ?></li>
+	  <?php endif;?>
+	</ol>
+</div>
+<!-- end page-heading -->
+<div class="content-table col-xs-12">
+
+	<!--  start filter -->
+	<?php if($this->filter) : ?>
+	<div class="filter-criteria col-xs-12">
+		<?php echo $this->filterform; ?>
+	</div>
+	<?php endif; ?>
+	<!--  end filter -->
+
+	<!--  start listview-table  -->
+	<div class="listview-table table-responsive col-xs-12">
+		<form id="mainform" action="" role="form">
+			<table class="table table-bordered table-hover table-striped">
+				<tr class="success">
+					<th class="check-col">
+						<a id="toggle-all" class="glyphicon glyphicon-unchecked"></a>
+					</th>
+					<?php
+					$i_ColNum = 0;
+					foreach ( $this->columns as $key => $a_Item ):
+						$i_ColNum++;
+						$sz_SortClass = $this->orderType == 'asc' ? 'glyphicon glyphicon-sort-by-alphabet' : 'glyphicon glyphicon-sort-by-alphabet-alt';
+					?>
+					<th>
+						<a href="
+						<?php
+						$order = 'asc';
+
+						if ( $this->orderCol == $key ) :
+							if ( $this->orderType == 'asc' ) :
+								$order = 'desc';
+							else :
+								$order = 'asc';
+							endif;
+						endif;
+
+						$urlOptions = array(
+                                                            'module' => $this->url['module'],
+                                                            'controller' => $this->url['controller'],
+                                                            'action' => $this->url['action'],
+                                                            'order' => $key.'-'.$order
+						);
+
+						echo $this->url($urlOptions)
+						?>"><?php if($this->orderCol == $key) : echo '<span class="'.$sz_SortClass.'"></span>'; endif; ?> <?php echo $a_Item['title'] ?></a>
+					</th>
+					<?php endforeach; ?>
+
+					<th class="option-col"><a href=""><?php echo $this->translate('ADMIN_TABLE_TITLE_Options'); ?></a></th>
+				</tr>
+
+				<?php
+				if($this->paginator->getTotalItemCount() > 0):
+					foreach($this->paginator as $key => $o_Item):
+						$sz_IdField = $this->mapper->getField( $this->url['id'] );
+				?>
+				<tr>
+					<td class="check-col">
+						<span class="glyphicon glyphicon-unchecked"></span>
+						<input name="check_box_ids[]" class="check-box-ids" type="checkbox" value="<?php echo $o_Item->$sz_IdField; ?>" />
+					</td>
+
+					<?php
+					foreach($this->columns as $sz_ColKey => $colItem) :
+
+						if ( isset($colItem['field'])) :
+
+							$m_Value = $o_Item->$colItem['field'];
+
+						else :
+
+							$sz_FieldName = $this->mapper->getField( $sz_ColKey );
+
+							$m_Value = $o_Item->$sz_FieldName;
+
+						endif;
+
+						if ( isset($colItem['filter']) ) :
+
+							$m_Value = $colItem['filter']($m_Value);
+
+						endif;
+						// Use for field want to translate
+						if ( isset($colItem['translate']) ) :
+
+							$m_Value = $colItem['translate']->translate($m_Value);
+
+						endif;
+					?>
+					<td>
+						<?php
+							if($sz_ColKey == 'status')
+							{
+								echo $m_Value == 1 ? $this->translate('ADMIN_TABLE_TITLE_StatusOn') : $this->translate('ADMIN_TABLE_TITLE_StatusOff');
+
+							} else {
+
+								echo $m_Value;
+
+							}
+						?>
+					</td>
+					<?php endforeach; ?>
+
+					<td class="option-col">
+						<button type="button" class="btn btn-default" onclick="window.location='<?php echo $this->url(array('module' => $this->url['module'], 'controller' => $this->url['controller'], 'action'=> 'edit', 'id' => $o_Item->$sz_IdField)) ?>'" title="<?php echo $this->translate('ADMIN_TABLE_TITLE_Edit'); ?>">
+							<span class="glyphicon glyphicon-edit"></span>
+						</button>
+						<button type="button" class="btn btn-default" onclick="<?php echo $this->deletefunc; ?>" sz_Value="<?php echo $o_Item->$sz_IdField; ?>" title="<?php echo $this->translate('ADMIN_TABLE_TITLE_Delete'); ?>">
+							<span class="glyphicon glyphicon-trash"></span>
+						</button>
+
+					</td>
+				</tr>
+			<?php
+				endforeach;
+			else :
+			?>
+				<tr><td align="center" colspan="<?php echo $i_ColNum + 2; ?>"><?php echo $this->translate('ADMIN_TABLE_TITLE_DataEmpty'); ?></td></tr>
+			<?php
+			endif;
+			?>
+
+			</table>
+
+		</form>
+	</div>
+	<!--  end listview-table -->
+	<div class="bottom-bar col-xs-12">
+		<!--  start actions-box ............................................... -->
+		<div class="actions-box col-xs-12 col-sm-2 col-md-2">
+			<button type="button" class="action-btn btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">
+				<span class="glyphicon glyphicon-cog"></span>
+				<?php echo $this->translate('ADMIN_TABLE_TITLE_Action'); ?>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<?php
+				/*
+				 * LangDD
+				* option to hide add action for login attempt screen
+				* without effecting to the others screen
+				* */
+				if(!$this->not_allow_add_action) :
+				?>
+				<li>
+					<a href="<?php echo $this->url(array('module' => $this->url['module'], 'controller' => $this->url['controller'], 'action'=> 'add')) ?>">
+						<span class="glyphicon glyphicon-plus-sign"></span>
+						<?php echo $this->translate('ADMIN_TABLE_TITLE_Add'); ?>
+					</a>
+				</li>
+				<?php endif; ?>
+				<?php if( $this->multidelete ) : ?>
+				<li>
+					<a href="#" onclick="COMMON.v_fConfirmMultiDelete('<?php echo '/' . $this->url['module'] . '/' . $this->url['controller']; ?>', '<?php echo $this->url['action']; ?>', '<?php echo $this->translate('ADMIN_ALERT_MSG_MultiDeleteConfirmTitle'); ?>', '<?php echo $this->translate('ADMIN_ALERT_MSG_SureDeleteThese'); ?>', '<?php echo $this->translate('ADMIN_ALERT_MSG_HaveNoSelected'); ?>');">
+						<span class="glyphicon glyphicon-remove-sign"></span>
+						<?php echo $this->translate('ADMIN_TABLE_TITLE_Delete'); ?>
+					</a>
+				</li>
+				<?php endif; ?>
+			</ul>
+		</div>
+		<!-- end actions-box........... -->
+		<div class="col-xs-12 col-sm-1 col-md-4"></div>
+		<!--  start paging..................................................... -->
+		<div class="paginator-box col-xs-12 col-sm-9 col-md-6">
+		<?php
+			if($this->paginator) :
+
+				echo $this->paginationControl($this->paginator, 'Sliding', 'pagination.phtml');
+
+			endif;
+		?>
+		</div>
+		<!--  end paging................ -->
+	</div>
+</div>
+<!--  end content-table-inner ............................................END  -->

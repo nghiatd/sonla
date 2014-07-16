@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/XmlRpc/Generator
+END
+XmlWriter.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/XmlRpc/Generator/XmlWriter.php
+END
+DomDocument.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/XmlRpc/Generator/DomDocument.php
+END
+GeneratorAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/XmlRpc/Generator/GeneratorAbstract.php
+END

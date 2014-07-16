@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Paginator
+END
+SerializableLimitIterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Paginator/SerializableLimitIterator.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Paginator/Exception.php
+END
+AdapterAggregate.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Paginator/AdapterAggregate.php
+END

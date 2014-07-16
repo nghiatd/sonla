@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Amf/Value
+END
+MessageBody.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Amf/Value/MessageBody.php
+END
+ByteArray.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Amf/Value/ByteArray.php
+END
+TraitsInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Amf/Value/TraitsInfo.php
+END
+MessageHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Amf/Value/MessageHeader.php
+END

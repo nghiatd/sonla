@@ -1,0 +1,83 @@
+<?php if ($this->pageCount): ?>
+	<!--  start paging..................................................... -->
+	<div class="paging-box col-xs-12 col-sm-7">
+		<ul class="pagination">
+			<!-- First page link -->		
+			<li<?php if (!isset($this->previous)): ?> class="disabled"<?php endif; ?>>
+				<a<?php if (!isset($this->previous)): ?> class="disable-link"<?php endif; ?> href="<?php echo $this->url(array('page' => $this->first)); ?>">
+					<span class="glyphicon glyphicon-fast-backward"></span>
+				</a>
+			</li>
+			<!-- Previous page link -->
+			<li<?php if (!isset($this->previous)): ?> class="disabled"<?php endif; ?>>
+				<a<?php if (!isset($this->previous)): ?> class="disable-link"<?php endif; ?> href="<?php echo $this->url(array('page' => $this->previous)); ?>">
+					<span class="glyphicon glyphicon-step-backward"></span>
+				</a>
+			</li>
+			<!-- Page info -->
+			<li class="active"><a class="disable-link" href="#"><?php echo $this->translate('ADMIN_PAGE_PageNum'); ?><strong><?php echo $this->current ?></strong> / <?php echo $this->last ?></a></li>
+			<!-- Next page link -->
+			<li<?php if (!isset($this->next)): ?> class="disabled"<?php endif; ?>>
+				<a<?php if (!isset($this->next)): ?> class="disable-link"<?php endif; ?> href="<?php echo $this->url(array('page' => $this->next)); ?>">
+					<span class="glyphicon glyphicon-step-forward"></span>
+				</a>
+			</li>
+			<!-- Last page link -->
+			<li<?php if (!isset($this->next)): ?> class="disabled"<?php endif; ?>>
+				<a<?php if (!isset($this->next)): ?> class="disable-link"<?php endif; ?> href="<?php  echo $this->url(array('page' => $this->last)); ?>">
+					<span class="glyphicon glyphicon-fast-forward"></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="perpage-box col-xs-12 col-sm-5">
+		<button type="button" class="perpage-btn btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">
+			<span class="glyphicon glyphicon-list"></span> 
+			<?php 
+				switch($this->itemCountPerPage)
+				{
+					case '10': echo '10' . $this->translate('ADMIN_PAGE_RowPerPage'); break;
+					case '20': echo '20' . $this->translate('ADMIN_PAGE_RowPerPage'); break;
+					case '30': echo '30' . $this->translate('ADMIN_PAGE_RowPerPage'); break;
+					case '40': echo '40' . $this->translate('ADMIN_PAGE_RowPerPage'); break;
+					case '50': echo '50' . $this->translate('ADMIN_PAGE_RowPerPage'); break;
+					default: echo $this->translate('ADMIN_PAGE_RowPerPageOption');
+				}
+			?>
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li<?php if ($this->itemCountPerPage == 10): ?> class="active disabled"<?php endif; ?>>
+				<a<?php if ($this->itemCountPerPage == 10): ?> class="disable-link"<?php endif; ?> href="<?php echo $this->url(array('page' => $this->first, 'perpage' => '10')); ?>">
+					<span class="badge pull-left">10</span>&nbsp;&nbsp;				
+					<?php echo $this->translate('ADMIN_PAGE_RowPerPage'); ?>
+				</a>
+			</li>
+			<li<?php if ($this->itemCountPerPage == 20): ?> class="active disabled"<?php endif; ?>>
+				<a<?php if ($this->itemCountPerPage == 20): ?> class="disable-link"<?php endif; ?> href="<?php echo $this->url(array('page' => $this->first, 'perpage' => '20')); ?>">
+					<span class="badge pull-left">20</span>&nbsp;&nbsp;				
+					<?php echo $this->translate('ADMIN_PAGE_RowPerPage'); ?>
+				</a>
+			</li>
+			<li<?php if ($this->itemCountPerPage == 30): ?> class="active disabled"<?php endif; ?>>
+				<a<?php if ($this->itemCountPerPage == 30): ?> class="disable-link"<?php endif; ?> href="<?php echo $this->url(array('page' => $this->first, 'perpage' => '30')); ?>">
+					<span class="badge pull-left">30</span>&nbsp;&nbsp;				
+					<?php echo $this->translate('ADMIN_PAGE_RowPerPage'); ?>
+				</a>
+			</li>
+			<li<?php if ($this->itemCountPerPage == 40): ?> class="active disabled"<?php endif; ?>>
+				<a<?php if ($this->itemCountPerPage == 40): ?> class="disable-link"<?php endif; ?> href="<?php echo $this->url(array('page' => $this->first, 'perpage' => '40')); ?>">
+					<span class="badge pull-left">40</span>&nbsp;&nbsp;				
+					<?php echo $this->translate('ADMIN_PAGE_RowPerPage'); ?>
+				</a>
+			</li>
+			<li<?php if ($this->itemCountPerPage == 50): ?> class="active disabled"<?php endif; ?>>
+				<a<?php if ($this->itemCountPerPage == 50): ?> class="disable-link"<?php endif; ?> href="<?php echo $this->url(array('page' => $this->first, 'perpage' => '50')); ?>">
+					<span class="badge pull-left">50</span>&nbsp;&nbsp;				
+					<?php echo $this->translate('ADMIN_PAGE_RowPerPage'); ?>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--  end paging................ -->
+<?php endif; ?>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/son-la-portal/!svn/ver/65/trunk/application/layouts/scripts/admin
+END
+layout.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/son-la-portal/!svn/ver/2/trunk/application/layouts/scripts/admin/layout.phtml
+END
+footer.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/son-la-portal/!svn/ver/33/trunk/application/layouts/scripts/admin/footer.phtml
+END
+nav-menu-left.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/son-la-portal/!svn/ver/62/trunk/application/layouts/scripts/admin/nav-menu-left.phtml
+END
+page-header.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/son-la-portal/!svn/ver/2/trunk/application/layouts/scripts/admin/page-header.phtml
+END
+nav-menu.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/son-la-portal/!svn/ver/65/trunk/application/layouts/scripts/admin/nav-menu.phtml
+END
+login.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/son-la-portal/!svn/ver/2/trunk/application/layouts/scripts/admin/login.phtml
+END
+header.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/son-la-portal/!svn/ver/2/trunk/application/layouts/scripts/admin/header.phtml
+END

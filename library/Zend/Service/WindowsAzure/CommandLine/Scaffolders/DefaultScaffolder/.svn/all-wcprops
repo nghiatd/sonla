@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/Scaffolders/DefaultScaffolder
+END
+build.bat
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/Scaffolders/DefaultScaffolder/build.bat
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/Scaffolders/DefaultScaffolder/index.php
+END

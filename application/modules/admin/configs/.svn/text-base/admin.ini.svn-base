@@ -1,0 +1,9 @@
+[production]
+; Cookie config
+resources.cookie.name = "rememberLogIn"
+resources.cookie.expireIn = 86400
+
+
+[testing : production]
+
+[development : production]

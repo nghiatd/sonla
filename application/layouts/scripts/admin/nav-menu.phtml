@@ -1,0 +1,142 @@
+<nav class="col-xs-12 navbar navbar-default" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle navbar-toggle-left" data-toggle="offcanvas" data-target=".sidebar-nav">
+			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand nav-home-right" href="<?php echo APPLICATION_URL ?>" target="_blank" title="<?php echo $this->translate('ADMIN_NAV_MENU_Home'); ?>"><span class="glyphicon glyphicon-home"></span></a>
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li <?php if ($this->selectedMenu == 'dashboard'): ?> class="active" <?php endif;?>>
+				<a href="<?php echo APPLICATION_URL ?>admin/"> <span class="glyphicon glyphicon-dashboard"></span>
+					<?php echo $this->translate('ADMIN_NAV_MENU_Dashboard'); ?>
+				</a>
+			</li>
+			<li class="dropdown<?php if ($this->selectedMenu == 'categories'): ?> active<?php endif;?>">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"> <span class="glyphicon glyphicon-list-alt"></span>
+					<?php echo $this->translate('ADMIN_NAV_MENU_Categories'); ?>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/categories/intro/"><?php echo $this->translate('ADMIN_NAV_MENU_CatIntro'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/categories/news/"><?php echo $this->translate('ADMIN_NAV_MENU_CatNews'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/categories/org/"><?php echo $this->translate('ADMIN_NAV_MENU_CatOrg'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/categories/business/"><?php echo $this->translate('ADMIN_NAV_MENU_CatBusiness'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/categories/citizen/"><?php echo $this->translate('ADMIN_NAV_MENU_CatCitizen'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/categories/tourer/"><?php echo $this->translate('ADMIN_NAV_MENU_CatTourer'); ?></a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/categories/add/"><?php echo $this->translate('ADMIN_NAV_MENU_AddCat'); ?></a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown<?php if ($this->selectedMenu == 'contents'): ?> active<?php endif;?>">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"> <span class="glyphicon glyphicon-briefcase"></span>
+					<?php echo $this->translate('ADMIN_NAV_MENU_Contents'); ?>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/content/intro/"><?php echo $this->translate('ADMIN_NAV_MENU_Intro'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/content/news/"><?php echo $this->translate('ADMIN_NAV_MENU_News'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/content/org/"><?php echo $this->translate('ADMIN_NAV_MENU_Org'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/content/business/"><?php echo $this->translate('ADMIN_NAV_MENU_Business'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/content/citizen/"><?php echo $this->translate('ADMIN_NAV_MENU_Citizen'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/content/tourer/"><?php echo $this->translate('ADMIN_NAV_MENU_Tourer'); ?></a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown<?php if ($this->selectedMenu == 'users'): ?> active<?php endif;?>">
+				<a href="<?php echo APPLICATION_URL ?>admin/user/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"> <span class="glyphicon glyphicon-user"></span>
+					<?php echo $this->translate('ADMIN_NAV_MENU_Users'); ?>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/user/personaldetail"><?php echo $this->translate('ADMIN_NAV_MENU_PersonalDetail'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/user/"><?php echo $this->translate('ADMIN_NAV_MENU_ViewAll'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/loginattempt/"><?php echo $this->translate('ADMIN_NAV_MENU_LoginAttempt'); ?></a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/user/add"><?php echo $this->translate('ADMIN_NAV_MENU_AddNew'); ?></a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown<?php if ($this->selectedMenu == 'faq'): ?> active<?php endif;?>">
+				<a href="<?php echo APPLICATION_URL ?>admin/faq" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"> <span class="glyphicon glyphicon-list-alt"></span>
+					<?php echo $this->translate('ADMIN_NAV_MENU_Faq'); ?>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/faq/business"><?php echo $this->translate('ADMIN_NAV_MENU_FaqBusiness'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/faq/citizen"><?php echo $this->translate('ADMIN_NAV_MENU_FaqCitizen'); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/faq/tourer"><?php echo $this->translate('ADMIN_NAV_MENU_FaqTourer'); ?></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-cog"></span> <?php echo $this->translate('ADMIN_NAV_ACC_Settings'); ?> <b class="caret"></b> </a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="<?php echo APPLICATION_URL ?>admin/user/personaldetail"><span class="glyphicon glyphicon-file"></span> <?php echo $this->translate('ADMIN_NAV_ACC_PersonalDetails'); ?>
+					</a>
+					</li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-briefcase"></span> <?php echo $this->translate('ADMIN_NAV_ACC_ProjectDetails'); ?>
+					</a>
+					</li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-envelope"></span> <?php echo $this->translate('ADMIN_NAV_ACC_Inbox'); ?>
+					</a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-stats"></span> <?php echo $this->translate('ADMIN_NAV_ACC_Statistics'); ?>
+					</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="<?php echo APPLICATION_URL ?>admin/logout"><span class="glyphicon glyphicon-log-out"></span> <?php echo $this->translate('ADMIN_TITLE_PAGES_Logout'); ?>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</nav>

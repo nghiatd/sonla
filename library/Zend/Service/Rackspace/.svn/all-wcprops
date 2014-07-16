@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/Rackspace
+END
+Files.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/Rackspace/Files.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/Rackspace/Exception.php
+END
+Servers.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/Rackspace/Servers.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/Rackspace/Abstract.php
+END

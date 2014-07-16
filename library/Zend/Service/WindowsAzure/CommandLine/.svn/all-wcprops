@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine
+END
+Package.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/Package.php
+END
+Certificate.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/Certificate.php
+END
+GetAsynchronousOperation.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/GetAsynchronousOperation.php
+END
+Storage.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/Storage.php
+END
+Deployment.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/Deployment.php
+END
+Service.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Service/WindowsAzure/CommandLine/Service.php
+END

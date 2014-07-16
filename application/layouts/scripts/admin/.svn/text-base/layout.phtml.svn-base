@@ -1,0 +1,29 @@
+<?php
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headMeta()->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
+$this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle( Zend_Registry::get('config')->app->title );
+$this->headLink(array('rel' => 'icon', 'href' => $this->baseUrl('images/shared/favicon.ico'),'type' => 'image/ico'));
+echo $this->doctype('HTML5');
+?>
+<html lang="en">
+<head>
+<?php echo $this->render('admin/header.phtml') ?>
+</head>
+<body>
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-left">
+			<?php echo $this->render('admin/nav-menu-left.phtml') ?>
+			<div class="col-xs-12">
+				<?php echo $this->render('admin/page-header.phtml') ?>
+				<?php echo $this->render('admin/nav-menu.phtml') ?>
+				<!-- start content-outer -- START -->
+				<?php echo $this->layout()->content ?>
+				<!--  end content-outer -- END -->
+				<?php echo $this->render('admin/footer.phtml') ?>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

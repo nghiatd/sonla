@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/son-la-portal/!svn/ver/34/trunk/public/js/admin
+END
+global.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/son-la-portal/!svn/ver/34/trunk/public/js/admin/global.js
+END
+user.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/son-la-portal/!svn/ver/20/trunk/public/js/admin/user.js
+END
+common.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/son-la-portal/!svn/ver/19/trunk/public/js/admin/common.js
+END
+citizen.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/son-la-portal/!svn/ver/34/trunk/public/js/admin/citizen.js
+END

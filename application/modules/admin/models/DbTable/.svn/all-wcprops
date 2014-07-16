@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/son-la-portal/!svn/ver/64/trunk/application/modules/admin/models/DbTable
+END
+Content.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/son-la-portal/!svn/ver/62/trunk/application/modules/admin/models/DbTable/Content.php
+END
+Intro.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/son-la-portal/!svn/ver/3/trunk/application/modules/admin/models/DbTable/Intro.php
+END
+Business.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/son-la-portal/!svn/ver/12/trunk/application/modules/admin/models/DbTable/Business.php
+END
+News.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/models/DbTable/News.php
+END
+FaqCategories.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/son-la-portal/!svn/ver/64/trunk/application/modules/admin/models/DbTable/FaqCategories.php
+END
+User.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/son-la-portal/!svn/ver/27/trunk/application/modules/admin/models/DbTable/User.php
+END
+Tourer.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/son-la-portal/!svn/ver/35/trunk/application/modules/admin/models/DbTable/Tourer.php
+END
+GeoIp.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/models/DbTable/GeoIp.php
+END
+Citizen.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/son-la-portal/!svn/ver/12/trunk/application/modules/admin/models/DbTable/Citizen.php
+END
+Categories.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/models/DbTable/Categories.php
+END
+UserLevel.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/models/DbTable/UserLevel.php
+END
+LoginAttempt.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/models/DbTable/LoginAttempt.php
+END
+Org.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/son-la-portal/!svn/ver/3/trunk/application/modules/admin/models/DbTable/Org.php
+END
+Faq.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/son-la-portal/!svn/ver/42/trunk/application/modules/admin/models/DbTable/Faq.php
+END

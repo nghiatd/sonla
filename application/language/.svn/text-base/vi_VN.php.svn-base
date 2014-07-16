@@ -1,0 +1,377 @@
+<?php
+return array(
+		// Admin Top bar
+		'ADMIN_TOP_BAR_Search' => 'Tìm kiếm',
+		'ADMIN_TOP_BAR_SearchAll' => 'Tất cả',
+		'ADMIN_TOP_BAR_SearchCategories' => 'Danh mục',
+		'ADMIN_TOP_BAR_SearchProducts' => 'Sản phẩm',
+		'ADMIN_TOP_BAR_SearchUsers' => 'Người dùng',
+
+		// Admin Navigation account
+		'ADMIN_NAV_ACC_Settings' => 'Thiết lập',
+		'ADMIN_NAV_ACC_PersonalDetails' => 'Thông tin cá nhân',
+		'ADMIN_NAV_ACC_ProjectDetails' => 'Chi tiết dự án',
+		'ADMIN_NAV_ACC_Inbox' => 'Hộp thư',
+		'ADMIN_NAV_ACC_Statistics' => 'Thống kê',
+
+		// Admin Navigation menu
+		'ADMIN_NAV_MENU_Home' => 'Trang chủ',
+		'ADMIN_NAV_MENU_Dashboard' => 'Bảng điều khiển',
+		'ADMIN_NAV_MENU_Categories' => 'Danh mục',
+                'ADMIN_NAV_MENU_Content' => 'Nội dung',
+		'ADMIN_NAV_MENU_CatIntro' => 'Danh mục Giới thiệu',
+		'ADMIN_NAV_MENU_CatNews' => 'Danh mục Tin tức',
+		'ADMIN_NAV_MENU_CatOrg' => 'Danh mục Tổ chức',
+		'ADMIN_NAV_MENU_CatBusiness' => 'Danh mục Doanh nghiệp',
+		'ADMIN_NAV_MENU_CatCitizen' => 'Danh mục Công dân',
+		'ADMIN_NAV_MENU_CatTourer' => 'Danh mục du khách',
+		'ADMIN_NAV_MENU_AddCat' => 'Thêm mới Danh mục',
+		'ADMIN_NAV_MENU_Contents' => 'Nội dung',
+		'ADMIN_NAV_MENU_Intro' => 'Quản lý Giới thiệu',
+		'ADMIN_NAV_MENU_News' => 'Quản lý Tin tức',
+		'ADMIN_NAV_MENU_Org' => 'Quản lý Tổ chức',
+		'ADMIN_NAV_MENU_Business' => 'Quản lý Doanh nghiệp',
+		'ADMIN_NAV_MENU_Citizen' => 'Quản lý Công dân',
+		'ADMIN_NAV_MENU_Users' => 'Người dùng',
+		'ADMIN_NAV_MENU_ViewAll' => 'Tất cả người dùng',
+		'ADMIN_NAV_MENU_LoginAttempt' => 'Thông tin đăng nhập',
+		'ADMIN_NAV_MENU_AddNew' => 'Thêm người dùng',
+		'ADMIN_NAV_MENU_PersonalDetail' => 'Thông tin cá nhân',
+		'ADMIN_NAV_MENU_Tourer' => 'Quản lý du khách',
+
+		// Admin Title pages
+		'ADMIN_TITLE_PAGES_Login' => 'Đăng nhập',
+		'ADMIN_TITLE_PAGES_Logout' => 'Đăng xuất',
+		'ADMIN_TITLE_PAGES_Admin' => 'Quản trị',
+
+		// Admin Title Categories page
+		'ADMIN_TITLE_PAGES_AddCat' => 'Thêm danh mục',
+		'ADMIN_TITLE_PAGES_EditCat' => 'Sửa danh mục',
+
+		// Admin Title User page
+		'ADMIN_TITLE_PAGES_Users' => 'Người dùng',
+		'ADMIN_TITLE_PAGES_AddUser' => 'Thêm người dùng',
+		'ADMIN_TITLE_PAGES_EditUser' => 'Chỉnh sửa người dùng',
+		'ADMIN_TITLE_PAGES_PersonalDetail' => 'Thông tin cá nhân',
+
+		// Admin Title Categories page
+		'ADMIN_TITLE_PAGES_Categories' => 'Danh mục',
+		'ADMIN_TITLE_PAGES_CatIntro' => 'Danh mục giới thiệu',
+		'ADMIN_TITLE_PAGES_CatOrg' => 'Danh mục tổ chức',
+		'ADMIN_TITLE_PAGES_CatNews' => 'Danh mục tin tức',
+		'ADMIN_TITLE_PAGES_CatBusiness' => 'Danh mục doanh nghiệp',
+		'ADMIN_TITLE_PAGES_CatCitizen' => 'Danh mục công dân',
+		'ADMIN_TITLE_PAGES_AddCategory' => 'Thêm danh mục',
+		'ADMIN_TITLE_PAGES_EditCategory' => 'Sửa danh mục',
+		'ADMIN_TITLE_PAGES_CatTourer' => 'Danh mục du khách',
+
+		// Message form warning maxlength and minlength
+		'ADMIN_FORM_WARNING_MSG_Required' => 'yêu cầu phải nhập',
+		'ADMIN_FORM_WARNING_MSG_Invalid' => 'không hợp lệ',
+		'ADMIN_FORM_WARNING_MSG_MaxLength' => 'không thể lớn hơn',
+		'ADMIN_FORM_WARNING_MSG_MinLength' => 'không thể nhỏ hơn',
+
+		// Admin Form button label
+		'ADMIN_FORM_BtnSubmit' => 'Gửi đi',
+		'ADMIN_FORM_BtnReset' => 'Nhập lại',
+		'ADMIN_FORM_BtnCancel' => 'Huỷ bỏ',
+		'ADMIN_FORM_FILTER_BtnSearch' => 'Tìm kiếm',
+		'ADMIN_FORM_FILTER_All' => 'Tất cả',
+
+		// Admin Categories Form labels
+		'ADMIN_CAT_FORM_LABELS_NameEn' => 'Tên tiếng Anh',
+		'ADMIN_CAT_FORM_LABELS_NameVi' => 'Tên tiếng Việt',
+		'ADMIN_CAT_FORM_LABELS_DescEn' => 'Mô tả tiếng Anh',
+		'ADMIN_CAT_FORM_LABELS_DescVi' => 'Mô tả tiếng Việt',
+		'ADMIN_CAT_FORM_LABELS_ParentCat' => 'Chọn danh mục cha',
+		'ADMIN_CAT_FORM_LABELS_Sort' => 'Số sắp xếp',
+		'ADMIN_CAT_FORM_LABELS_Status' => 'Hiển thị hay không',
+
+		// Admin User Form labels
+		'ADMIN_USER_FORM_LABELS_Username' => 'Tên tài khoản',
+		'ADMIN_USER_FORM_LABELS_Password' => 'Mật khẩu',
+		'ADMIN_USER_FORM_LABELS_RePassword' => 'Xác nhận mật khẩu',
+		'ADMIN_USER_FORM_LABELS_RememberMe' => 'Ghi nhớ',
+		'ADMIN_USER_FORM_LABELS_Email' => 'Email',
+		'ADMIN_USER_FORM_LABELS_Level' => 'Cấp bậc',
+		'ADMIN_USER_FORM_LABELS_Login' => 'Đăng nhập',
+		'ADMIN_USER_FORM_LABELS_Send' => 'Gửi đi',
+
+		// Admin User Titles display
+		'ADMIN_USER_TITLE_EmailAddr' => 'Địa chỉ email',
+
+		// Admin Table titles
+		'ADMIN_TABLE_TITLE_Sort' => 'Thứ tự',
+		'ADMIN_TABLE_TITLE_Status' => 'Trạng thái',
+		'ADMIN_TABLE_TITLE_StatusOn' => 'Mở',
+		'ADMIN_TABLE_TITLE_StatusOff' => 'Đóng',
+		'ADMIN_TABLE_TITLE_LastVisit' => 'Lần thực hiện cuối',
+		'ADMIN_TABLE_TITLE_Options' => 'Tuỳ chọn',
+		'ADMIN_TABLE_TITLE_Edit' => 'Chỉnh sửa',
+		'ADMIN_TABLE_TITLE_Delete' => 'Xoá',
+		'ADMIN_TABLE_TITLE_Add' => 'Thêm mới',
+		'ADMIN_TABLE_TITLE_Action' => 'Thực thi',
+		'ADMIN_TABLE_TITLE_DataEmpty' => 'Dữ liệu trống',
+
+		// Admin Categories Table titles
+		'ADMIN_CAT_TABLE_TITLE_Name' => 'Tên danh mục',
+		'ADMIN_CAT_TABLE_TITLE_Desc' => 'Mô tả',
+		'ADMIN_CAT_TABLE_TITLE_SelectParent' => 'Chọn danh mục',
+
+		// Admin User Table titles
+		'ADMIN_USER_TABLE_TITLE_Name' => 'Tên tài khoản',
+		'ADMIN_USER_TABLE_TITLE_Email' => 'Email',
+		'ADMIN_USER_TABLE_TITLE_Level' => 'Cấp bậc',
+
+		// User level title
+		'ADMIN_USER_LEVEL_TopAdmin' => 'Quản trị cấp cao',
+		'ADMIN_USER_LEVEL_Admin' => 'Quản trị viên',
+		'ADMIN_USER_LEVEL_EditorChief' => 'Tổng biên tập',
+		'ADMIN_USER_LEVEL_Editor' => 'Biên tập viên',
+		'ADMIN_USER_LEVEL_Reporter' => 'Phóng viên',
+		'ADMIN_USER_LEVEL_Collaborator' => 'Cộng tác viên',
+		'ADMIN_USER_LEVEL_Guest' => 'Khách',
+
+		// Admin User Links
+		'ADMIN_USER_LINK_ForgotPassword' => 'Quên mật khẩu?',
+		'ADMIN_USER_LINK_BackToLogin' => 'Về trang đăng nhập',
+
+		// Admin User Messages displayed
+		'ADMIN_USER_MSG_UserRequired' => 'Yêu cầu nhập tên tài khoản!',
+		'ADMIN_USER_MSG_PassRequired' => 'Yêu cầu nhập mật khẩu!',
+		'ADMIN_USER_MSG_UserPassRequired' => 'Yêu cầu nhập tên tài khoản và mật khẩu!',
+		'ADMIN_USER_MSG_SendEmailResetPass' => 'Vui lòng nhập email và chúng tôi sẽ thiết lập lại mật khẩu cho bạn.',
+		'ADMIN_USER_MSG_LogoutSuccessfully' => 'Bạn vừa mới đăng xuất thành công',
+		'ADMIN_USER_MSG_UsePassIncorrect' => 'Tên tài khoản hoặc mật khẩu không đúng!',
+		'ADMIN_USER_MSG_NoPermissionAccess' => 'Bạn không có quyền truy cập trang này!',
+		'ADMIN_USER_MSG_StatusNo' => 'Tài khoản của bạn đã bị khoá. Vui lòng liên hệ quản trị viên để biết thêm thông tin!',
+
+		// Admin Alert messages
+		'ADMIN_ALERT_MSG_HaveNoSelected' => 'Vui lòng chọn ít nhất một bản ghi',
+		'ADMIN_ALERT_MSG_MultiDeleteConfirmTitle' => 'Xác nhận xoá các bản ghi',
+		'ADMIN_ALERT_MSG_SureDeleteThese' => 'Bạn thực sự muốn xoá những bản ghi này?',
+		'ADMIN_ALERT_MSG_CannotDeleteThese' => 'Không thể xoá những bản ghi này!',
+
+		// Admin Category Alert messages
+		'ADMIN_CAT_ALERT_MSG_DeleteCatConfirmTitle' => 'Xác nhận xoá danh mục',
+		'ADMIN_CAT_ALERT_MSG_SureDeleteThisCat' => 'Bạn thực sự muốn xoá danh mục này?',
+		'ADMIN_CAT_ALERT_MSG_CannotDeleteThis' => 'Không thể xoá danh mục này!',
+
+		// Admin User Alert messages
+		'ADMIN_USER_ALERT_MSG_DeleteUserConfirmTitle' => 'Xác nhận xoá người dùng',
+		'ADMIN_USER_ALERT_MSG_SureDeleteThisUser' => 'Bạn chắc chắn muốn xoá người dùng này?',
+		'ADMIN_USER_ALERT_MSG_CannotDeleteYourself' => 'Bạn không thể tự xoá tài khoản của mình!',
+		'ADMIN_USER_ALERT_MSG_OnlyDeleteLowerLevel' => 'Bạn chỉ có thể xoá được người dùng cấp bậc thấp hơn!',
+		'ADMIN_USER_ALERT_MSG_NameAlreadyExisted' => 'Tên tài khoản này đã tồn tại. Vui lòng chọn tên tài khoản khác!',
+		'ADMIN_USER_ALERT_MSG_CannotDeleteThis' => 'Không thể xoá người dùng này!',
+
+		// Admin User Page display
+		'ADMIN_PAGE_PageNum' => 'Trang ',
+		'ADMIN_PAGE_RowPerPageOption' => 'Số dòng hiển thị',
+		'ADMIN_PAGE_RowPerPage' => ' dòng trên trang',
+
+		/* Intro translation */
+		'ADMIN_TITLE_PAGES_Intro' => 'Quản lý giới thiệu',
+		'ADMIN_TITLE_PAGES_AddIntro' => 'Thêm giới thiệu mới',
+		'ADMIN_TITLE_PAGES_EditIntro' => 'Sửa giới thiệu',
+		'ADMIN_INTRO_TABLE_TITLE_Name' => 'Tiêu đề giới thiệu',
+		'ADMIN_INTRO_TABLE_TITLE_CAT' => 'Danh mục',
+		'ADMIN_TABLE_TITLE_IntroCatList' => 'Danh mục giới thiệu',
+		'ADMIN_INTRO_FORM_LABELS_NameEn' => 'Tiêu đề tiếng Anh',
+		'ADMIN_INTRO_TABLE_TITLE_Desc' => 'Description',
+		'ADMIN_INTRO_FORM_LABELS_DescVi' => 'Mô tả tiếng Việt',
+		'ADMIN_INTRO_FORM_LABELS_DescEn' => 'Mô tả tiếng Anh',
+		'ADMIN_INTRO_FORM_LABELS_ContentEn' => 'Nội dung tiếng Anh',
+		'ADMIN_INTRO_FORM_LABELS_ContentVi' => 'Nội dung tiếng Việt',
+		'ADMIN_INTRO_FORM_LABELS_ParentIntro' => 'Danh mục cha',
+		'ADMIN_INTRO_FORM_LABELS_NameVi' => 'Tiêu đề tiếng Việt',
+		'ADMIN_INTRO_FORM_LABELS_Status' => 'Trạng thái',
+		'ADMIN_INTRO_FORM_LABELS_Alias' => 'Bí danh',
+		'ADMIN_INTRO_TABLE_TITLE_Desc' => 'Mô tả',
+		// Intro Messages
+		'ADMIN_INTRO_ALERT_MSG_CannotDeleteThis' => 'Không thể xóa bài này !',
+
+		/* News translation */
+		'ADMIN_TITLE_PAGES_News' => 'Quản lý tin tức',
+		'ADMIN_NEWS_TABLE_TITLE_Name' => 'Tiêu đề tin',
+		'ADMIN_TABLE_TITLE_NewsCatList' => 'Danh mục tin',
+		'ADMIN_NEWS_FORM_LABELS_NameEn' => 'Tiêu đề tiếng Anh',
+		'ADMIN_NEWS_TABLE_TITLE_Desc' => 'Mô tả',
+
+		/* Organize translation */
+		'ADMIN_TITLE_PAGES_Org' => 'Quản lý tổ chức',
+		'ADMIN_ORG_TABLE_TITLE_Name' => 'Tiêu đề tổ chức',
+		'ADMIN_TABLE_TITLE_OrgCatList' => 'Danh mục tổ chức',
+		'ADMIN_ORG_FORM_LABELS_NameEn' => 'Tiêu đề tiếng Anh',
+		'ADMIN_ORG_TABLE_TITLE_Desc' => 'Mô tả',
+
+		/* Business translation */
+		'ADMIN_TITLE_PAGES_Business' => 'Quản lý doanh nghiệp',
+		'ADMIN_BUSINESS_TABLE_TITLE_Name' => 'Tiêu đề doanh nghiệp',
+		'ADMIN_TABLE_TITLE_BusinessCatList' => 'Danh mục doanh nghiệp',
+		'ADMIN_BUSINESS_FORM_LABELS_NameEn' => 'Tiêu đề doanh nghiệp English',
+		'ADMIN_BUSINESS_TABLE_TITLE_Desc' => 'Mô tả',
+		'ADMIN_BUSINESS_TABLE_Category' => 'Chọn danh mục',
+		'ADMIN_BUSINESS_TABLE_DescriptionEn' => 'Mô tả',
+
+		/**
+		 * *******************
+		 * BUSINESS
+		 * *******************
+		 */
+		// Admin Buziness Form labels
+		'ADMIN_BUSINESS_FORM_LABELS_NameEn' 		=> 'Tiêu đề tiếng anh',
+		'ADMIN_BUSINESS_FORM_LABELS_NameVi' 		=> 'Tiêu đề tiếng việt',
+		'ADMIN_BUSINESS_FORM_LABELS_Alias' 			=> 'Alias',
+		'ADMIN_BUSINESS_FORM_LABELS_ContentEn' 		=> 'Nội dung tiếng anh',
+		'ADMIN_BUSINESS_FORM_LABELS_ContentVi' 		=> 'Nội dung tiếng anh',
+		'ADMIN_BUSINESS_FORM_LABELS_DescEn' 		=> 'Mô tả tiếng anh',
+		'ADMIN_BUSINESS_FORM_LABELS_DescVi' 		=> 'Mô tả tiếng việt',
+		'ADMIN_BUSINESS_FORM_LABELS_ParentBusi' 	=> 'Chọn doanh nghiệp cha',
+		'ADMIN_BUSINESS_FORM_LABELS_Sort' 			=> 'Số sắp xếp',
+		'ADMIN_BUSINESS_FORM_LABELS_Status' 		=> 'Hiển thị hay không',
+		
+		/* Business translation */
+		'ADMIN_TITLE_PAGES_Business' 						=> 'Quản lý doanh nghiệp',
+		'ADMIN_BUSINESS_TABLE_TITLE_Name' 					=> 'Tiêu đề doanh nghiệp',
+		'ADMIN_BUSINESS_TABLE_Description' 					=> 'Mô tả',
+		'ADMIN_BUSINESS_TABLE_TITLE_Desc' 					=> 'Mô tả',
+		'ADMIN_BUSINESS_TABLE_ParentBusi' 					=> 'Chọn doanh nghiệp cha',
+		'ADMIN_BUSINESS_TABLE_ParentBusiName' 				=> 'Danh mục',
+		'ADMIN_TABLE_TITLE_BusinessCatList' 				=> 'Danh sách doanh nghiệp cha',
+		'ADMIN_BUSINESS_ALERT_MSG_SureDeleteThisBusiness' 	=> 'Bạn có chắc chắn muốn xóa doanh nghiệp này?',
+		'ADMIN_BUSINESS_ALERT_MSG_CannotDeleteThis' 		=> 'Không thể xóa doanh nghiệp này!',
+		'ADMIN_BUSINESS_ALERT_MSG_DeleteCatConfirmTitle' 	=> 'Xác nhận xóa doanh nghiệp',
+		
+		
+		/**
+		 * *******************
+		 * CITIZEN
+		 * *******************
+		 */
+
+		/* Citizen translation */
+
+		'ADMIN_TITLE_PAGES_Citizen' => 'Quản lý công dân',
+		'ADMIN_TITLE_PAGES_AddCitizen' => 'Thêm bài viết',
+		'ADMIN_TITLE_PAGES_EditCitizen' => 'Sửa bài viết',
+		'ADMIN_CITIZEN_FORM_LABELS_Alias' => 'Alias',
+		'ADMIN_CITIZEN_FORM_LABELS_NameVi' => 'Tiêu đề tiếng Việt',
+		'ADMIN_CITIZEN_FORM_LABELS_NameEn' => 'Tiêu đề tiếng Anh',
+		'ADMIN_CITIZEN_FORM_LABELS_File' => 'Chọn hình ảnh',
+		'ADMIN_CITIZEN_FORM_LABELS_DescVi' => 'Mô tả tiếng Việt',
+		'ADMIN_CITIZEN_FORM_LABELS_DescEn' => 'Mô tả tiếng Anh',
+		'ADMIN_CITIZEN_FORM_LABELS_ContentVi' => 'Nội dung tiếng Việt',
+		'ADMIN_CITIZEN_FORM_LABELS_ContentEn' => 'Nội dung tiếng Anh',
+		'ADMIN_CITIZEN_FORM_LABELS_ParentCat' => 'Chọn danh mục cha',
+		'ADMIN_CITIZEN_FORM_LABELS_Sort' => 'Số sắp xếp',
+		'ADMIN_CITIZEN_FORM_LABELS_Status' => 'Hiển thị hay không',
+
+		'ADMIN_CITIZEN_TABLE_TITLE_Alias' => 'Alias',
+		'ADMIN_CITIZEN_TABLE_TITLE_Name' => 'Tiêu đề',
+		'ADMIN_CITIZEN_TABLE_TITLE_Desc' => 'Mô tả',
+		'ADMIN_CITIZEN_TABLE_TITLE_Content' => 'Nội dung công dân',
+		'ADMIN_CITIZEN_TABLE_TITLE_CAT' => 'Danh mục',
+		'ADMIN_TABLE_TITLE_CitizenCatList' => 'Danh mục công dân',
+
+		// Admin CITIZEN Alert messages
+
+		'ADMIN_CITIZEN_ALERT_MSG_DeleteCatConfirmTitle' => 'Xác nhận xóa bài viết',
+		'ADMIN_CITIZEN_ALERT_MSG_SureDeleteThisCitizen' => 'Bạn chắc chắn xóa bài viết này?',
+		'ADMIN_CITIZEN_ALERT_MSG_CannotDeleteThis' => 'Không thể xóa bài viết này!',
+
+		/* Login attempt */
+		'ADMIN_TITLE_PAGES_LoginAttempt' => 'Thông tin đăng nhập',
+		'ADMIN_LOGIN_ATT_USER_NAME' => 'Tên tài khoản',
+		'ADMIN_LOGIN_ATT_AREA' => 'Nhóm quyền',
+		'ADMIN_LOGIN_ATT_IP' => 'Địa chỉ IP',
+		'ADMIN_LOGIN_ATT_LOCATION' => 'Đường dẫn',
+		'ADMIN_LOGIN_ATT_SUCCESS' => 'Thành công',
+		'ADMIN_LOGIN_ATT_DATETIME' => 'Thời gian truy cập',
+		'ADMIN_LOGIN_ATT_LOGIN_SUCCESS' => 'Có',
+		'ADMIN_LOGIN_ATT_LOGIN_FAIL' => 'Không',
+		'ADMIN_LOGIN_ATT_DeleteUserConfirmTitle' => 'Xóa thông tin truy cập',
+		'ADMIN_LOGIN_ATT_SureDeleteThisLoginAttempt' => 'Bạn có chắc muốn xóa lần truy cập này?',
+
+		/**
+		 * *******************
+		 * TOURER
+		 * *******************
+		 */
+
+		/* Tourer translation */
+		'ADMIN_TOURER_FORM_LABELS_Alias' => 'Bí danh',
+		'ADMIN_TITLE_PAGES_Tourer' => 'Quản lý du khách',
+		'ADMIN_TOURER_TABLE_TITLE_Name' => 'Tiêu đề',
+		'ADMIN_TOURER_TABLE_TITLE_Content' => 'Nội dung',
+		'ADMIN_TOURER_TABLE_TITLE_Alias' => 'Bí danh',
+		'ADMIN_TABLE_TITLE_TourerCatList' => 'Danh mục du khách',
+		'ADMIN_TOURER_FORM_LABELS_NameEn' => 'Tiêu đề tiếng Anh',
+		'ADMIN_TOURER_TABLE_TITLE_Desc' => 'Mô tả',
+		'ADMIN_TOURER_TABLE_TITLE_CAT' => 'Danh mục',
+		'ADMIN_TOURER_FORM_LABELS_ContentVi' => 'Nội dung tiếng Việt',
+		'ADMIN_TOURER_FORM_LABELS_ContentEn' => 'Nội dung tiếng Anh',
+		'ADMIN_TOURER_FORM_LABELS_NameVi' => 'Tiêu đề tiếng Việt',
+		'ADMIN_TOURER_FORM_LABELS_DescEn' => 'Mô tả tiếng Anh',
+		'ADMIN_TOURER_FORM_LABELS_DescVi' => 'Mô tả tiếng Việt',
+		'ADMIN_TOURER_FORM_LABELS_ParentCat' => 'Chọn danh mục cha',
+		'ADMIN_TOURER_FORM_LABELS_Sort' => 'Số sắp xếp',
+		'ADMIN_TOURER_FORM_LABELS_Status' => 'Hiển thị hay không',
+
+		// Admin CITIZEN Alert messages
+		'ADMIN_TOURER_ALERT_MSG_DeleteCatConfirmTitle' => 'Xác nhận xóa thông tin du khách',
+		'ADMIN_TOURER_ALERT_MSG_SureDeleteThisTourer' => 'Bạn chắc chắn xóa thông tin du khách này?',
+		'ADMIN_TOURER_ALERT_MSG_CannotDeleteThis' => 'Không thể xóa thông tin du khách này!',
+
+		/**
+		 * *******************
+		 * FAQ
+		 * *******************
+		 */
+
+		/* FAQ translation */
+		'ADMIN_NAV_MENU_Faq' => 'Hỏi - đáp',
+		'ADMIN_NAV_MENU_FaqBusiness' => 'Dành cho doanh nghiệp',
+		'ADMIN_NAV_MENU_FaqCitizen' => 'Dành cho công dân',
+		'ADMIN_NAV_MENU_FaqTourer' => 'Dành cho du khách',
+		'ADMIN_NAV_MENU_FaqIntro' => 'Danh sách hỏi-đáp',
+		'ADMIN_FAQ_FORM_LABELS_Name' => 'Họ tên',
+		'ADMIN_FAQ_FORM_LABELS_Title' => 'Chủ đề câu hỏi',
+		'ADMIN_FAQ_FORM_LABELS_Address' => 'Địa chỉ',
+		'ADMIN_FAQ_FORM_LABELS_Email' => 'Email',
+		'ADMIN_FAQ_FORM_LABELS_Content' => 'Câu hỏi',
+		'ADMIN_FAQ_FORM_LABELS_Answer' => 'Trả lời',
+		'ADMIN_FAQ_FORM_LABELS_ParentCat' => 'Danh mục',
+		'ADMIN_TITLE_PAGES_FaqBusiness' => 'Hỏi - Đáp dành cho danh nghiệp',
+		'ADMIN_TITLE_PAGES_FaqCitizen' => 'Hỏi- Đáp dành cho công dâ',
+		'ADMIN_TITLE_PAGES_FaqTourer' => 'Hỏi - Đáp dành cho du khách',
+		'ADMIN_TITLE_PAGES_Faq' => 'Hỏi - Đáp',
+		'ADMIN_FAQ_TABLE_TITLE_title' => 'Chủ đề',
+		// Admin Faq Alert messages
+		'ADMIN_FAQ_ALERT_MSG_DeleteFaqConfirmTitle' => 'Xác nhận xóa chủ đề hỏi - đáp',
+		'ADMIN_FAQ_ALERT_MSG_SureDeleteThisFaq' => 'Bạn có chắc chắn muốn xóa chủ đề hỏi đáp này?',
+		'ADMIN_FAQ_ALERT_MSG_CannotDeleteThis' => 'Không thể xóa chủ đề hỏi-đáp này!',
+
+                /*
+                 * --------------------CONTENT------------------
+                 */
+
+                'ADMIN_NAV_MENU_ContentCitizen' => 'Quản lý công dân',
+                'ADMIN_TITLE_PAGES_ContentCitizen' => 'Quản lý công dân',
+
+                'ADMIN_CONTENT_FORM_LABELS_NameEn' => 'Tên tiếng Anh',
+		'ADMIN_CONTENT_FORM_LABELS_NameVi' => 'Tên tiếng Việt',
+		'ADMIN_CONTENT_FORM_LABELS_DescEn' => 'Mô tả tiếng Anh',
+		'ADMIN_CONTENT_FORM_LABELS_DescVi' => 'Mô tả tiếng Việt',
+		'ADMIN_CONTENT_FORM_LABELS_ParentCat' => 'Chọn danh mục cha',
+		'ADMIN_CONTENT_FORM_LABELS_Sort' => 'Số sắp xếp',
+		'ADMIN_CONTENT_FORM_LABELS_Status' => 'Hiển thị hay không',
+
+                // Admin Table titles
+		'ADMIN_CONTENT_TABLE_TITLE_Name' => 'Tiêu đề',
+		'ADMIN_CONTENT_TABLE_TITLE_Desc' => 'Mô tả',
+		'ADMIN_CONTENT_TABLE_TITLE_SelectCategories' => 'Chọn danh mục',
+
+                //END
+
+);

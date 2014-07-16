@@ -1,0 +1,29 @@
+<?php
+$this->layout()->setLayout('admin/layout');
+$this->title = $this->translate('ADMIN_TITLE_PAGES_PersonalDetail');
+$this->headTitle($this->title);
+$this->selectedMenu = 'users';
+
+?>
+
+<!--  start page-heading -->
+<div id="page-heading">
+
+	<h1><?php echo $this->translate('ADMIN_TITLE_PAGES_PersonalDetail'); ?></h1>
+	
+</div>
+<!-- end page-heading -->
+
+<div id="content-table">
+	<!--  start content-table-inner -->
+	<div id="content-table-inner">
+	
+		<table border="0" width="100%" cellpadding="0" cellspacing="0">
+			<tr valign="top">
+				<td>
+					<?php echo $this->o_UserForm ?>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

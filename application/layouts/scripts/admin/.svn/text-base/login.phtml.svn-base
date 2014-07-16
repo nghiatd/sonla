@@ -1,0 +1,30 @@
+<?php
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headMeta()->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
+$this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle( Zend_Registry::get('config')->app->title );
+$this->headLink(array('rel' => 'icon', 'href' => $this->baseUrl('images/shared/favicon.ico'),'type' => 'image/ico'));
+echo $this->doctype('HTML5');
+?>
+<html lang="en">
+<head>
+<?php echo $this->render('admin/header.phtml') ?>
+</head>
+<body>
+	<body id="login-bg">
+		<div class="container">
+			<div class="form-signin">
+				<!-- start logo -->
+				<div id="logo-login">
+					<a href="index.html"><img src="<?php echo APPLICATION_URL ?>images/shared/logo.png" class="img-responsive" width="156" alt="NTV" /></a>
+				</div>
+				<!-- end logo -->
+				<div class="clearfix"></div>
+				<?php echo $this->layout()->content ?>
+			</div>
+			<?php echo $this->render('admin/footer.phtml') ?>
+		</div>
+		<!-- /container -->
+	</body>
+</html>

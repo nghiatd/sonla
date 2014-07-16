@@ -1,0 +1,45 @@
+<!-- Start: page-top-outer -->
+<div class="col-xs-12">
+
+	<!-- start logo -->
+	<div id="logo" class="pull-left">
+		<a href=""><img src="<?php echo APPLICATION_URL ?>images/shared/logo.png" class="img-responsive" width="156" alt="NTV" /> </a>
+	</div>
+	<!-- end logo -->
+	<!-- start language -->
+	<div id="language-change" class="pull-right">
+		<?php $o_SessionCommon = new Zend_Session_Namespace('COMMON'); ?>
+		<div class="bfh-selectbox bfh-languages" curr-code="<?php echo $o_SessionCommon->language; ?>" data-language="<?php echo $o_SessionCommon->language == Zf_Util_Const::LANG_EN ? 'en_US' : 'vi_VN'; ?>" data-available="en_US,vi_VN" data-flags="true" data-blank="false"></div>
+	</div>
+	<!-- end language -->
+	
+	<!--  start top-search -->
+	<!-- 
+	<div id="top-search">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				
+					<td>
+						<input type="text" value="<?php echo $this->translate('ADMIN_TOP_BAR_Search'); ?>" onblur="if (this.value=='') { this.value='<?php echo $this->translate('ADMIN_TOP_BAR_Search'); ?>'; }" onfocus="if (this.value=='<?php echo $this->translate('ADMIN_TOP_BAR_Search'); ?>') { this.value=''; }" class="top-search-inp" />
+					</td>
+					<td>
+						<select  class="styledselect">
+							<option value=""><?php echo $this->translate('ADMIN_TOP_BAR_SearchAll'); ?></option>
+							<option value=""><?php echo $this->translate('ADMIN_TOP_BAR_SearchCategories'); ?></option>
+							<option value=""><?php echo $this->translate('ADMIN_TOP_BAR_SearchProducts'); ?></option>
+							<option value=""><?php echo $this->translate('ADMIN_TOP_BAR_SearchUsers'); ?></option>
+						</select> 
+					</td>
+					<td>
+						<input type="image" src="<?php echo APPLICATION_URL ?>images/shared/top_search_btn.gif"  />
+					</td>
+					
+			</tr>
+		</table>
+	</div>
+	<div class="clear"></div>
+	 -->
+	<!--  end top-search -->
+	
+</div>
+<!-- End: page-top-outer -->

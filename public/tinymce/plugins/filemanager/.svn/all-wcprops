@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/son-la-portal/!svn/ver/34/trunk/public/tinymce/plugins/filemanager
+END
+plugin.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/plugin.min.js
+END
+dialog.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/dialog.php
+END
+force_download.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/force_download.php
+END
+delete_file.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/delete_file.php
+END
+upload.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/upload.php
+END
+create_folder.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/create_folder.php
+END
+utils.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/utils.php
+END
+delete_folder.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/delete_folder.php
+END
+config.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/son-la-portal/!svn/ver/34/trunk/public/tinymce/plugins/filemanager/config.php
+END
+php_image_magician.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/son-la-portal/!svn/ver/33/trunk/public/tinymce/plugins/filemanager/php_image_magician.php
+END

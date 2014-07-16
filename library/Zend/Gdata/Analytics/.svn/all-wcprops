@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Gdata/Analytics
+END
+DataEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Gdata/Analytics/DataEntry.php
+END
+DataFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Gdata/Analytics/DataFeed.php
+END
+AccountQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Gdata/Analytics/AccountQuery.php
+END
+AccountFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Gdata/Analytics/AccountFeed.php
+END
+DataQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Gdata/Analytics/DataQuery.php
+END
+AccountEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Gdata/Analytics/AccountEntry.php
+END

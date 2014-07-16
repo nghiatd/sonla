@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/son-la-portal/!svn/ver/20/trunk/application/modules/admin/models/UserLevel
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/son-la-portal/!svn/ver/19/trunk/application/modules/admin/models/UserLevel/Interface.php
+END
+Repository.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/son-la-portal/!svn/ver/19/trunk/application/modules/admin/models/UserLevel/Repository.php
+END
+DataMapper.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/son-la-portal/!svn/ver/19/trunk/application/modules/admin/models/UserLevel/DataMapper.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/models/UserLevel/Exception.php
+END
+Mapper.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/son-la-portal/!svn/ver/2/trunk/application/modules/admin/models/UserLevel/Mapper.php
+END
+Entity.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/son-la-portal/!svn/ver/20/trunk/application/modules/admin/models/UserLevel/Entity.php
+END

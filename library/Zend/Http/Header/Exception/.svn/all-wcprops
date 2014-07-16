@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Http/Header/Exception
+END
+RuntimeException.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Http/Header/Exception/RuntimeException.php
+END
+InvalidArgumentException.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/son-la-portal/!svn/ver/2/trunk/library/Zend/Http/Header/Exception/InvalidArgumentException.php
+END
